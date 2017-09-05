@@ -12,44 +12,48 @@
  */
 class PHPDocPractice {
 
-	/**
-	 * @var string $name User name
-	 * @var int $age User age
-	 */
-	protected $name;
-	protected $age;
 
-	/**
-	 * $name property setter
-	 *
-	 * Sets $name property value
-	 *
-	 * @param string $name User name
-	 * @return void
-	 */
-	public function setName(string $name) : void {
-		$this->name = $name;
-	}
+    /**
+     * @var string $name User name
+     * @var int $age User age
+     */
+    protected $name;
+    protected $age;
 
-	/**
-	 * $age property setter
-	 *
-	 * Sets $age property value
-	 *
-	 * @param int $age User name
-	 * @return void
-	 */
-	public function setAge(int $age) : void {
-		$this->name = $age;
-	}
 
-	/**
-	 * Returns user information
-	 *
-	 * @return array
-	 */
-	public function getUserInfo() : array {
-		return get_object_vars($this);
-	}
+    /**
+     * $name property setter
+     *
+     * Sets $name property value
+     *
+     * @param string $name User name
+     * @return void
+     */
+    public function setName(string $name) : void {
+        $this->name = $name;
+    }
+
+
+    /**
+     * $age property setter
+     *
+     * Sets $age property value
+     *
+     * @param int $age User name
+     * @return void
+     */
+    public function setAge(int $age) : void {
+        $this->name = $age;
+    }
+
+
+    /**
+     * Returns user information
+     *
+     * @return (int|string)[] user information
+     */
+    public function getUserInfo() : array {
+        return get_object_vars($this);
+    }
 
 }
